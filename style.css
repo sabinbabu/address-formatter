@@ -1,5 +1,37 @@
+* {
+  margin: 0;
+}
+
 .flex {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.error-message {
+  color: red;
+}
+
+.main-container {
+  background: url(https://images.template.net/3625/Post-Card--Frent-2X.jpg)
+    no-repeat center rgba(193, 166, 113, 255);
+  height: 100vh;
+}
+
+.form-container {
+  height: 70vh;
+  flex: 1;
+  position: relative;
+  right: -10rem;
+  line-height: 2rem;
+}
+
+.formatted-address {
+  height: 70vh;
+  flex: 1;
+  position: relative;
+  right: 7rem;
+  flex-direction: column;
+  line-height: 4rem;
+  margin-top: 3.5rem;
 }

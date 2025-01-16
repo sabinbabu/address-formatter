@@ -7,38 +7,51 @@
     <title>Address Formatter</title>
   </head>
   <body>
-    <main class="form-container flex">
-      <form>
-        <h2>Address Formatter</h2>
-        <table>
-          <tr>
-            <td><label for="address">Address</label></td>
-            <td><input id="address" name="address" /></td>
-          </tr>
+    <div class="main-container flex">
+      <main class="form-container flex">
+        <form>
+          <h2>Address Formatter</h2>
+          <table>
+            <tr>
+              <td><label for="address">Address</label></td>
+              <td><input id="address" name="address" required /></td>
+            </tr>
 
-          <tr>
-            <td><label for="city">City</label></td>
-            <td><input id="city" name="city" /></td>
-          </tr>
+            <tr>
+              <td><label for="city">City</label></td>
+              <td><input id="city" name="city" required /></td>
+            </tr>
 
-          <tr>
-            <td><label for="state">State</label></td>
-            <td><input id="state" name="state" /></td>
-          </tr>
+            <tr>
+              <td><label for="state">State</label></td>
+              <td><input id="state" name="state" required /></td>
+            </tr>
 
-          <tr>
-            <td><label for="postal-code">Postal Code</label></td>
-            <td><input type="number" id="postal-code" name="postal-code" /></td>
-          </tr>
+            <tr>
+              <td><label for="postal-code">Postal Code</label></td>
+              <td>
+                <input
+                  type="number"
+                  id="postal-code"
+                  name="postal-code"
+                  required
+                />
+              </td>
+            </tr>
 
-          <tr>
-            <td><button id="submit" type="submit">Submit</button></td>
-          </tr>
-        </table>
-      </form>
-    </main>
+            <tr>
+              <td><button id="submit" type="submit">Submit</button></td>
+              <td><button id="reset" type="reset">Reset</button></td>
+            </tr>
+          </table>
+        </form>
+      </main>
 
-    <section class="formatted-address flex"></section>
+      <section class="formatted-address flex">
+        <h2 id="street-address"></h2>
+        <h2 id="country-address"></h2>
+      </section>
+    </div>
     <script src="./script.js"></script>
   </body>
 </html>
